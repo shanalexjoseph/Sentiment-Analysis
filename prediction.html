@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        /* body {background-color: maroon;} */
+        h1 {color: black;}
+        h2 {color: black;}
+        p {color: black;}
+
+        .centered{
+            position:absolute;
+            width:1000px;
+            height:1000px;
+            left:15%;
+            top:30%;
+            margin-left:-15px;
+            margin-top:-40px;
+        }
+
+        .centered1{
+          position:absolute;
+          width:100px;
+          height:1000px;
+          left:50%;
+          top:21%;
+          margin-left:-50px;
+          margin-top:-21px;
+        }
+
+        .centered2{
+          width:300px;
+          height:20px;
+        }
+
+        .button {
+            background-color: black; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-decoration: none;
+            border-radius: 12px;
+            font-size: 16px;
+        }
+
+    </style>
+    <script type="text/javascript">
+    </script>
+</head>
+<body style="background:white url(http://www.html.am/images/backgrounds/background-image-2.gif) repeat fixed;font-size:18px;">
+<div class="centered">
+   <h1 align = "center"> &#x1F601; SENTENCE SENTIMENT PREDICTION &#9785; </h1>
+   <!-- <p>Let’s start by entering one sentence</p> -->
+    <div align = "center">
+        <table>
+            <tr>
+                <td>
+                    <h2>
+<form action="/predict" method="get"><br>
+  Sentence : <input class="centered2" type="text" name="text">
+  <br>
+  <input class="button" type="submit" value="Submit" background-color="black" font-color="white">
+  <br>
+  <label for="prediction">{{prediction_string}}</label>
+  <br>
+  <label for="prediction-value">{{prediction_value}}</label>
+</form>
+</h2>
+</div>
+</div>
+</body>
+</html>
